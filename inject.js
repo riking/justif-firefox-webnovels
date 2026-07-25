@@ -1,8 +1,8 @@
 const injScr = document.createElement("script");
 injScr.crossorigin = "anonymous";
 injScr.type = "module";
-injScr.integrity = "sha384-4kWmDGFQjdKePkKz514dyaA1C3Nc898OGngMDk7GVHCfpPsn4jOelkAgn1Kyd+bR";
-injScr.src = browser.runtime.getURL("justif-0.6.2-auto.js");
+injScr.integrity = "sha384-etPkRux0yMCo9jsDYyUYTSifMS4bqL50A1BDj/lbCMulx21JiKiTY0K/T/UdabB0";
+injScr.src = browser.runtime.getURL("justif-0.6.3-auto.js");
 
 const NoJustifyClass = "no-justify";
 const injCss = document.createElement("style");
