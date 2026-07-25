@@ -1,0 +1,12 @@
+Original code in this repository is All Rights Reserved.
+
+The following are not original code:
+
+justif is https://github.com/lyallcooper/justif/tree/v0.6.2/src
+Copyright (c) 2026 Lyall Cooper
+Provided under the MIT License
+
+American English hyphenation patterns by Donald E. Knuth and Frank M. Liang,
+from Plain TeX's hyphen.tex ("Unlimited copying and redistribution of this file
+are permitted as long as this file is not modified. Modifications are
+permitted, but only if the resulting file is not named hyphen.tex.").
