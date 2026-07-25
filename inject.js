@@ -13,7 +13,7 @@ body:not(.no-justify) .chapter .chapter-content {
 	text-align: justify;
 }
 body:not(.no-justify) .chapter {
-	padding-right: calc(var(--spacing) * 3); /* instead of x2 */
+	padding-right: calc(var(--spacing) * 2.5); /* instead of x2 */
 }
 `;
 	}; break;
