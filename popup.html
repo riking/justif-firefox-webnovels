@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+* { box-sizing: border-box; }
+#reload[disabled] {
+	display: none;
+}
+main {
+	display: grid;
+	grid-template-columns: 1;
+}
+button {
+	min-width: 200px;
+	min-height: 2.5em;
+	font-size: 24px;
+	padding: 1em;
+}
+.btn-container {
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+</head>
+<body>
+	<main>
+	<div class="btn-container">
+	<button id=disable-story><span id=action-story>__MSG_disableStory__</span> <span id=text-story>&hellip;</span></button>
+	</div>
+	<div class="btn-container">
+	<button id=disable-domain><span id=action-domain>__MSG_disableSite__</span> <span id=text-domain>&hellip;</span></button>
+	</div>
+
+	<div class="btn-container">
+	<button id=reload disabled>__MSG_reload__</button>
+	</div>
+	</main>
+
+	<script src="common.js"></script>
+	<script src="popup.js"></script>

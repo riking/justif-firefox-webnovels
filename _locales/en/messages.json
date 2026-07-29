@@ -1,0 +1,42 @@
+{
+	"site-ao3": {
+		"message": "Archive Of Our Own",
+		"description": "Brand name of https://archiveofourown.org/"
+	},
+	"site-rr": {
+		"message": "Royal Road",
+		"description": "Brand name of https://royalroad.com/"
+	},
+	"disableSite": {
+		"message": "Disable for ",
+		"description": "Button to turn off the extension for all pages on site-*."
+	},
+	"enableSite": {
+		"message": "Enable for ",
+		"description": "Button to turn off the extension for all pages on site-*."
+	},
+	"reload": {
+		"message": "Reload",
+		"description": "Button for reloading the page after turning off the extension"
+	},
+	"disableStory": {
+		"message": "Disable on ",
+		"description": "Button to turn off the extension for a single story",
+		"placeholders": {
+			"site": {
+				"content": "$1",
+				"example": "The content of any site-* translation key"
+			}
+		}
+	},
+	"enableStory": {
+		"message": "Enable on ",
+		"description": "Button to turn on the extension for a single story",
+		"placeholders": {
+			"site": {
+				"content": "$1",
+				"example": "The content of any site-* translation key"
+			}
+		}
+	}
+}
