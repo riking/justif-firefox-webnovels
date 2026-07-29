@@ -18,6 +18,7 @@
 		{
 			"resources": ["justif-0.7.0-auto.js"],
 			"matches": [
+				"https://archiveofourown.org/works/*",
 				"https://www.royalroad.com/fiction/*/*/chapter/**"
 			]
 		}
@@ -25,6 +26,7 @@
 	"content_scripts": [
 		{
 			"matches": [
+				"https://archiveofourown.org/works/*",
 				"https://www.royalroad.com/fiction/*/*/chapter/**"
 			],
 			"js": ["inject.js"]

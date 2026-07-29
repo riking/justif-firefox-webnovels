@@ -17,6 +17,9 @@ body:not(.no-justify) .chapter {
 }
 `;
 	}; break;
+	case "https://archiveofourown.org": {
+		injCss.textContent = "#workskin { text-align: justify; }";
+	}; break;
 }
 
 document.head.appendChild(injCss);
