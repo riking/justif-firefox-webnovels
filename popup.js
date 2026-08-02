@@ -48,7 +48,23 @@ async function setText() {
 			if (m[1]) {
 				storyBrand = m[1].trim();
 			}
-		}
+		}; break;
+		case "rr": {
+			const rgx = / - (.*?)$/;
+			const m = rgx.exec(tabTitle);
+			if (m[1]) {
+				storyBrand = m[1].trim();
+			}
+			if (!storyBrand) {
+				storyBrand = tabTitle;
+			}
+			// e.g. [STUBBED]
+			const rgxBrackets = /\s*\[.*\]\s*/g;
+			const withoutBrackets = storyBrand.replaceAll(rgxBrackets, "").trim();
+			if (withoutBrackets.length >= 3) {
+				storyBrand = withoutBrackets;
+			}
+		}; break;
 	}
 	if (!storyBrand) {
 		storyBrand = tabTitle;

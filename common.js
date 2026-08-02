@@ -4,7 +4,7 @@
  */
 function recognizePage({ origin, pathname }) {
 	switch (origin) {
-		case "https://royalroad.com": {
+		case "https://www.royalroad.com": {
 			const rgx = /\/fiction\/(\d+)\/[^\/]*\/chapter\/\d+.*/;
 			const m = rgx.exec(pathname);
 			if (m && m[1]) {

@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Justif for Webnovels",
-	"version": "1.0.4",
+	"version": "1.0.5",
 
 	"description": "[Testing version!] Applies the Justif text justification algortithm to Royal Road and Archive Of Our Own.\nAmerican English hyphenation patterns by Donald E. Knuth and Frank M. Liang, from Plain TeX's hyphen.tex.\nJustif by Lyall Cooper, licensed under MIT.",
 
