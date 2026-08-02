@@ -16,7 +16,7 @@
 	},
 	"web_accessible_resources": [
 		{
-			"resources": ["justif-0.6.3-auto.js"],
+			"resources": ["justif-0.7.0-auto.js"],
 			"matches": [
 				"https://www.royalroad.com/fiction/*/*/chapter/**"
 			]
