@@ -44,6 +44,13 @@ body:not(.no-justify) .chapter {
 		case "ao3": {
 			return "#workskin { text-align: justify; }";
 		}; break;
+		case "sbattles": {
+			// category 1: Threadmark
+			// category 13: Apocrypha
+			// category 16: Sidestory
+			// category 19: Informational
+			return ".message.threadmark-category-1 .message-userContent, .message.threadmark-category-16 .message-userContent { text-align: justify; }";
+		}; break;
 	}
 
 }
@@ -52,6 +59,8 @@ function switchInject() {
 	switch (location.origin) {
 		case "https://www.royalroad.com":
 			injectRoyalRoad(); break;
+		case "https://forums.spacebattles.com":
+			injectXenForo(); break;
 	}
 }
 
@@ -90,6 +99,8 @@ function injectRoyalRoad() {
 			if (window.justif) window.justif.unjustify();
 		}
 	});
+}
+function injectXenForo() {
 }
 
 install(); // no await

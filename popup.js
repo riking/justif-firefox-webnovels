@@ -65,6 +65,13 @@ async function setText() {
 				storyBrand = withoutBrackets;
 			}
 		}; break;
+		case "sbattles": {
+			const rgx = /^(.*) \| (\w+ \d+ \| )?SpaceBattles$/;
+			const m = rgx.exec(tabTitle);
+			if (m[1]) {
+				storyBrand = m[1];
+			}
+		}; break;
 	}
 	if (!storyBrand) {
 		storyBrand = tabTitle;

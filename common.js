@@ -12,6 +12,14 @@ function recognizePage({ origin, pathname }) {
 			}
 			return { host: "rr" };
 		}
+		case "https://forums.spacebattles.com": {
+			const rgx = /\/threads\/[^.]*\.(\d+)\/?.*/;
+			const m = rgx.exec(pathname);
+			if (m && m[1]) {
+				return { host: "sbattles", storyID: m[1] };
+			}
+			return { host: "sbattles" };
+		}
 		case "https://archiveofourown.com":
 		case "https://archiveofourown.org":
 		case "https://archiveofourown.net":
