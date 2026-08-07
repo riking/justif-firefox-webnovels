@@ -12,8 +12,8 @@ async function install() {
 	const injScr = document.createElement("script");
 	injScr.crossorigin = "anonymous";
 	injScr.type = "module";
-	injScr.integrity = "sha384-1Hg4cvYAblD0BOUHuqE0erw1V8FccWUq8L9TKOWKl1In5GQXzwoS1jgpE54pZ/K1";
-	injScr.src = browser.runtime.getURL("justif-0.7.0-auto.js");
+	injScr.integrity = "sha384-w/TAnAUDwlGQWzMcDwXgpTgcx+IkpHKRPmC1BjFfn2VVafO7nHRcJ6szHO+jWMlT";
+	injScr.src = browser.runtime.getURL("justif-0.7.2-auto.js");
 
 	const NoJustifyClass = "no-justify";
 	const injCss = document.createElement("style");

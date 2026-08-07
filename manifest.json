@@ -36,7 +36,7 @@
 	},
 	"web_accessible_resources": [
 		{
-			"resources": ["justif-0.7.0-auto.js"],
+			"resources": ["justif-0.7.2-auto.js"],
 			"matches": [
 				"https://archiveofourown.org/works/*",
 				"https://archiveofourown.com/works/*",
