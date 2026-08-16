@@ -3,7 +3,7 @@
 	"name": "Justif for Webnovels",
 	"version": "1.0.8",
 
-	"description": "[Testing version!] Applies the Justif text justification algortithm to Royal Road, Archive of Our Own, SpaceBattles, Sufficient Velocity.\nAmerican English hyphenation patterns by Donald E. Knuth and Frank M. Liang, from Plain TeX's hyphen.tex.\nJustif by Lyall Cooper, licensed under MIT.",
+	"description": "Applies the Justif text justification algortithm to Royal Road, Archive of Our Own, SpaceBattles, Sufficient Velocity.\nAmerican English hyphenation patterns by Donald E. Knuth and Frank M. Liang, from Plain TeX's hyphen.tex.\nJustif by Lyall Cooper, licensed under MIT.",
 
 	"icons": {},
 	"default_locale": "en",
