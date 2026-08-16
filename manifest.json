@@ -54,7 +54,7 @@
 	],
 	"content_scripts": [
 		{
-			"run_at": "document_end",
+			"run_at": "document_start",
 			"matches": [
 				"https://forums.spacebattles.com/threads/*",
 				"https://forums.sufficientvelocity.com/threads/*",
