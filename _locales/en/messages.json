@@ -11,6 +11,9 @@
 		"message": "SpaceBattles",
 		"description": "Brand name of https://forums.spacebattles.com/"
 	},
+	"site-svelocity": {
+		"message": "Sufficient Velocity"
+	},
 	"disableSite": {
 		"message": "Disable for ",
 		"description": "Button to turn off the extension for all pages on site-*."

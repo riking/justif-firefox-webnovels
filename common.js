@@ -3,6 +3,7 @@
  * @returns {{host: string, storyID: string}}
  */
 function recognizePage({ origin, pathname }) {
+	const rgxXenforo = /\/threads\/[^.]*\.(\d+)\/?.*/;
 	switch (origin) {
 		case "https://www.royalroad.com": {
 			const rgx = /\/fiction\/(\d+)\/[^\/]*\/chapter\/\d+.*/;
@@ -13,12 +14,18 @@ function recognizePage({ origin, pathname }) {
 			return { host: "rr" };
 		}
 		case "https://forums.spacebattles.com": {
-			const rgx = /\/threads\/[^.]*\.(\d+)\/?.*/;
-			const m = rgx.exec(pathname);
+			const m = rgxXenforo.exec(pathname);
 			if (m && m[1]) {
 				return { host: "sbattles", storyID: m[1] };
 			}
 			return { host: "sbattles" };
+		}
+		case "https://forums.sufficientvelocity.com": {
+			const m = rgxXenforo.exec(pathname);
+			if (m && m[1]) {
+				return { host: "svelocity", storyID: m[1] };
+			}
+			return { host: "svelocity" };
 		}
 		case "https://archiveofourown.com":
 		case "https://archiveofourown.org":
