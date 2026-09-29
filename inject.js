@@ -41,7 +41,9 @@ function getCSSForHost(host) {
 }`;
 		}; break;
 		case "ao3": {
-			return "#workskin { text-align: justify; }";
+			return `
+#workskin { text-align: justify; }
+#workskin #chapters { margin-right: 3px; } /* Account for floating quotes to avoid scrollbars */`;
 		}; break;
 		case "sbattles": {
 			// category 1: Threadmark
